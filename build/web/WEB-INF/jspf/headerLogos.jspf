@@ -1,0 +1,24 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- Logos -->
+<header class="cps-header">
+  <div class="container">
+    <div class="logo-group">
+      <div class="logo-group-item">
+        <a class="logo logo-fatec" href="#" title="Página Inicial" data-title="Baixada Santista" data-sub-title="Praia Grande">
+          <h1 class="sr-only">Fatec Praia Grande</h1>
+        </a>
+      </div>
+      <div class="logo-group-item">
+        <a class="logo logo-cps" href="http://www.cps.sp.gov.br" title="Portal do Centro Paula Souza" target="_blank">
+          <h2 class="sr-only">Centro Paula Souza</h2>
+        </a>
+      </div>
+      <div class="logo-group-item">
+        <a class="logo logo-governo-sp" href="http://www.saopaulo.sp.gov.br" title="Portal do Governo do estado de São Paulo" target="_blank">
+          <span class="sr-only">Governo do estado de São Paulo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

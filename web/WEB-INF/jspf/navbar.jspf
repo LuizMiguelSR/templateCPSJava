@@ -1,0 +1,107 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- NavBar -->
+<nav class="cps-navbar" data-spy="affix" data-offset-top="140">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false" aria-controls="navbar-collapsed">
+      <span class="sr-only">Alterar navegação</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand visible-xs" href="#">Fatec-PG</a>
+    </div>
+    <div id="navbar-collapsed" class="collapse navbar-collapse ">
+      <ul class="nav navbar-nav">
+        <li class="home"><a href="index.jsp">Início</a></li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Institucional <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li role="presentation" class="dropdown-header">Quem somos</li>
+            <li><a href="sobre.jsp">Sobre a Fatec</a></li>
+            <li><a href="regimento.jsp">Regimento e Regulamento</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">Departamentos</li>
+            <li><a href="#">Direção</a></li>
+            <li><a href="#">Coordenação de Cursos</a></li>
+            <li><a href="#">Diretoria de Serviços Acadêmicos</a></li>
+            <li><a href="#">Diretoria de Serviços Administrativos</a></li>
+            <li><a href="#">Centro de Informática</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#">CIPA</a></li>
+            <li><a href="#">Horários de Funcionamento</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li role="presentation" class="dropdown-header">Graduação</li>
+              <li><a href="#">Análise e Desenvolvimento de Sistemas</a></li>
+              <li><a href="#">Comércio Exterior</a></li>
+              <li><a href="#">Gestão Empresarial</a></li>
+              <li><a href="#">Processos Químicos</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Secretaria<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Informações Gerais</a></li>
+              <li><a href="#">Documentos e Modelos</a></li>
+              <li><a href="#">Perguntas Frequentes</a></li>
+              <li><a href="#">Requerimentos</a></li>
+            </ul>
+        </li> 
+        <li><a href="https://fatecpg.edu.br/revista/index.php/ps" target="_blank">Revista</a></li>
+        <li><a href="#">Núcleos de Pesquisa</a></li>
+        <li><a href="#">Vitrine de Negócios</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Área exclusiva &nbsp;<i class="fa fa-user fa-fw" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li role="presentation" class="dropdown-header">Acesso restrito</li>
+            <li><a href="https://siga.cps.sp.gov.br/aluno/login.aspx" target="_blank"><i class="fa fa-lock fa-fw" aria-hidden="true"></i>&nbsp; SIGA</a></li>
+            <li><a href="http://www.moodlefatecpg.com.br/" target="_blank"><i class="fa fa-lock fa-fw" aria-hidden="true"></i>&nbsp; Moodle</a></li>
+            <li><a href="#"><i class="fa fa-lock fa-fw" aria-hidden="true"></i>&nbsp; E-mail Fatec</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">Aluno</li>
+            <li><a data-toggle="modal" data-target="#modalUser" >Login</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal Login -->
+<div class="modal fade" id="modalUser" tabindex="-1" role="dialog" aria-labelledby="modalUser" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="exampleModalLabel">Realizar Login</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Usuário:</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Senha:</label>
+            <input type="password" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
